@@ -1,0 +1,5 @@
+{
+  "prettier.configPath": ".prettier.json",
+  "prettier.prettierPath": "",
+  "prettier.tabWidth": 4
+}
