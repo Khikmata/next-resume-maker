@@ -13,11 +13,11 @@ export default function Home() {
             Вы можете создать резюме сразу или авторизоваться
           </p>
           <div className="flex justify-between items-center">
-            <Button color="primary">
-              <Link href="preview">Создать резюме</Link>
+            <Button>
+              <Link href="/create">Создать резюме</Link>
             </Button>
             <p className="text-neutral-400">/</p>
-            <Button color="secondary" text="Авторизоваться" />
+            <Button variant="outline">Авторизоваться</Button>
           </div>
         </div>
       </main>
