@@ -1,2 +1,1 @@
-export { ResumeCreateBlock } from './ResumeCreateBlock'
-export { ResumeCreateForm } from './ResumeCreateForm'
+export { ResumeCreateView } from './ResumeCreateView'

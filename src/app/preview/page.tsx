@@ -4,7 +4,7 @@ import profile from '../../../public/resumes/example1.webp'
 
 export default function Preview() {
   return (
-    <div className="font-sans items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 flex flex-col">
+    <div className="font-sans items-center justify-items-center  gap-16 sm:p-20 flex flex-col">
       <main className="justify-center align-middle w-full flex flex-1 flex-col h-full items-center">
         <div className="m-0-auto w-4xl h-full">
           <h1 className="text-3xl mb-4">На выбор тока эти пока)</h1>
