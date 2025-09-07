@@ -6,15 +6,12 @@ import { Slot } from '@radix-ui/react-slot'
 import * as React from 'react'
 import {
   Controller,
-  FormProvider,
   useFormContext,
   useFormState,
   type ControllerProps,
   type FieldPath,
   type FieldValues,
 } from 'react-hook-form'
-
-const Form = FormProvider
 
 type FormFieldContextValue<
   TFieldValues extends FieldValues = FieldValues,
@@ -154,7 +151,6 @@ function FormMessage({ className, ...props }: React.ComponentProps<'p'>) {
 }
 
 export {
-  Form,
   FormControl,
   FormDescription,
   FormField,

@@ -1,5 +1,5 @@
 import { ThemeToggle } from '@/features/ThemeToggle'
-import { ThemeProvider } from '@/shared/providers'
+import { ThemeProvider, Toaster } from '@/shared/providers'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased p-4 h-full`}
       >
         <ThemeProvider
           attribute="class"
@@ -35,10 +35,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mb-4">
             <ThemeToggle />
           </div>
-          {children}
+          <div className="h-[calc(100vh-86px)]">{children}</div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

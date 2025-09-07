@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="font-sans items-center justify-items-center min-h-screen p-8 pb-4 gap-16 flex flex-col">
+    <div className="font-sans items-center justify-items-center  h-full gap-16 flex flex-col">
       <main className="justify-center align-middle w-full flex flex-1 flex-col h-full items-center">
         <div className="m-0-auto">
           <h1 className="self-start text-3xl mb-2">Привет</h1>
